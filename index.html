@@ -115,6 +115,14 @@ footer{
         &copy; Programador Natan
     </footer>  
 </body>
-<script src="script.js">
+<script>
+    const buttons = document.querySelectorAll("button");
+const body = document.body;
+buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+        body.style.background = btn.innerText.toLowerCase();
+    });
+});
+
 </script>
 </html>
